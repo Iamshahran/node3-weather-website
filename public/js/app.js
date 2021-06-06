@@ -1,5 +1,3 @@
-console.log("This is useless");
-
 fetch("http://puzzle.mead.io/puzzle").then((responce) => {
   responce.json().then((data) => {
     console.log(data);
