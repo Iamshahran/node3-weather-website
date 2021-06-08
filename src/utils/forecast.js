@@ -15,7 +15,7 @@ const forecast = (longitude, latitude, callback) => {
     } else {
       callback(
         undefined,
-        `${body.current.weather_descriptions} throughout the day. It's ${body.current.temperature} degree, but it feels like ${body.current.feelslike} degree`
+        `${body.current.weather_descriptions} throughout the day. It's ${body.current.temperature} degree, but it feels like ${body.current.feelslike} degree. The observation time is ${body.current.observation_time}.`
       );
     }
   });
